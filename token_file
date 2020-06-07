@@ -1,0 +1,70 @@
+[(KEYWORD package), (VARIABLE jcompiler)]
+
+[(KEYWORD import), (KEYWORD java), (KEYWORD util), (KEYWORD Scanner)]
+
+[(KEYWORD public), (KEYWORD class), (KEYWORD java), (VARIABLE c)]
+
+[]
+
+[(KEYWORD public), (KEYWORD static), (KEYWORD void), (VARIABLE main), (OPBRACKET (), (VARIABLE String), (VARIABLE args), (CLOSEBRACKET ))]
+
+[]
+
+[(VARIABLE SuppressWarnings), (OPBRACKET (), (STRING "resource"), (CLOSEBRACKET ))]
+
+[(KEYWORD Scanner), (KEYWORD console), (ASSIGNOP =), (VARIABLE new), (KEYWORD Scanner), (OPBRACKET (), (KEYWORD System), (VARIABLE in), (CLOSEBRACKET ))]
+
+[(KEYWORD int), (VARIABLE number)]
+
+[(KEYWORD char), (VARIABLE choice)]
+
+[(KEYWORD int), (VARIABLE evenSum), (ASSIGNOP =)]
+
+[(KEYWORD int), (VARIABLE oddSum), (ASSIGNOP =)]
+
+[(KEYWORD do)]
+
+[]
+
+[(KEYWORD System), (KEYWORD out), (KEYWORD println), (OPBRACKET (), (STRING "Enter the number "), (CLOSEBRACKET ))]
+
+[(VARIABLE number), (ASSIGNOP =), (KEYWORD console), (KEYWORD next), (VARIABLE Int), (OPBRACKET (), (CLOSEBRACKET ))]
+
+[(COMMENT // determines an interger if it is even by dividing it by)]
+
+[(COMMENT // two and find if it has no remainder thus even)]
+
+[(KEYWORD if), (OPBRACKET (), (VARIABLE number), (MODULUSOP %), (NUMBER 2), (EQUALOP ==), (CLOSEBRACKET ))]
+
+[]
+
+[(VARIABLE evenSum), (ADDITIONOP +=), (VARIABLE number)]
+
+[]
+
+[(COMMENT // check if the integer is not even then its odd(has a remainder))]
+
+[(KEYWORD else)]
+
+[]
+
+[(VARIABLE oddSum), (ADDITIONOP +=), (VARIABLE number)]
+
+[]
+
+[(KEYWORD System), (KEYWORD out), (VARIABLE print), (OPBRACKET (), (STRING "Do you want to continue y/n? "), (CLOSEBRACKET ))]
+
+[(VARIABLE choice), (ASSIGNOP =), (KEYWORD console), (KEYWORD next), (OPBRACKET (), (CLOSEBRACKET )), (KEYWORD char), (VARIABLE At), (OPBRACKET (), (CLOSEBRACKET ))]
+
+[(COMMENT //prompts the user to choose where to enter another integer)]
+
+[(KEYWORD while), (OPBRACKET (), (VARIABLE choice), (EQUALOP ==), (VARIABLE y), (OROP ||), (VARIABLE choice), (EQUALOP ==), (VARIABLE Y), (CLOSEBRACKET ))]
+
+[(KEYWORD System), (KEYWORD out), (KEYWORD println), (OPBRACKET (), (STRING "Sum of even numbers: "), (VARIABLE evenSum), (CLOSEBRACKET ))]
+
+[(KEYWORD System), (KEYWORD out), (KEYWORD println), (OPBRACKET (), (STRING "Sum of odd numbers: "), (VARIABLE oddSum), (CLOSEBRACKET ))]
+
+[]
+
+[]
+

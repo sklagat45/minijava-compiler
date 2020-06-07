@@ -1,0 +1,75 @@
+<program> ::= <package declaration>? <import declarations>? <class declarations>?
+
+	<package declaration> ::= package <package name>;
+
+		<package name> ::= <identifier> | <identifier>.<package name>
+
+	<import declarations> ::= <import declaration> | <import declarations> <import declaration>
+
+		<import declaration> ::= import <package name>.<class name>;
+
+	<class declarations> ::= <class declaration> | <class declarations> <class declaration>
+
+		<class declaration> ::= class <class name> <class body>
+
+			<class name> ::= identifier
+
+<identifier> ::= a ... z<identifier> | A ... Z<identifier> | <identifier>0 ... 9
+
+			<class body> ::= {<statements>* <main function> <function declaration>*}
+
+				<main function> ::= public static void main (String [] args){<statements>*}
+
+				<statements> ::= <declarations>* <statements> | <expressions>* <statements> | <control flows>* <statements>
+
+					<declarations> ::= <declaration> | <declarations> <declaration>
+
+						<declaration> ::= <type> <identifier>;
+
+<type> ::= int | double | long | boolean | string
+
+					<expressions> ::= <expression> | <expressions> <expression>
+
+						<expression> ::= <initialization> | <function call>
+
+							<function call> ::= <function prototype>;
+
+							<initialization> ::= <identifier> = <identifier> | <identifier> = <identifier> <arithmetic operator> <identifier> 
+
+<operator> ::= <arithmetic operator> | <relational operator> | <unary operator>
+
+	<arithmetic operator> ::= + | - | * | /
+
+	<relational operator> ::= && | || | > | < | !> | !< | !=
+
+	<unary operator> ::= ++ | --
+
+							<function call> ::= <function name>(<params>*) | <package name>.<function name>(<params>*);
+
+								<params> ::= <identifier> | <identifier>, <params>
+
+								<function name> = <identifier>
+
+					<control flows> ::= <if statement> | <for loop> | <while loop>
+
+						<if statement> ::= if(<relation>){<statements>} | if(<relation>){<statements>}else{<statements>}
+
+							<relation> ::= <identifier> <relational operator> <identifier>
+
+						<for loop> ::= for(<initialization>, <relation>, <increment>){<statements>}
+
+							<increment> ::= <identifier> <unary operator>
+
+						<while loop> ::= while(<relation>){<statements>}
+
+				<function declaration> ::= <function prototype>{<statements>}
+
+					<function prototype> ::= <function name>(<arguments>*)
+
+					<function name> ::= <identifier>
+
+					<arguments> ::= <argument> | <argument>, <arguments>
+
+					<argument> ::= <declaration>
+
+

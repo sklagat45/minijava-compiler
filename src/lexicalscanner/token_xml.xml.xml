@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><inserts>
+    <option>[(KEYWORD package), (VARIABLE jcompiler)]</option>
+    <option/>
+    <option>[(KEYWORD import), (KEYWORD java), (KEYWORD util), (KEYWORD Scanner)]</option>
+    <option/>
+    <option>[(KEYWORD public), (KEYWORD class), (KEYWORD java), (VARIABLE c)]</option>
+    <option/>
+    <option>[]</option>
+    <option/>
+    <option>[(KEYWORD public), (KEYWORD static), (KEYWORD void), (VARIABLE main), (OPBRACKET (), (VARIABLE String), (VARIABLE args), (CLOSEBRACKET ))]</option>
+    <option/>
+    <option>[]</option>
+    <option/>
+    <option>[(VARIABLE SuppressWarnings), (OPBRACKET (), (STRING "resource"), (CLOSEBRACKET ))]</option>
+    <option/>
+    <option>[(KEYWORD Scanner), (KEYWORD console), (ASSIGNOP =), (VARIABLE new), (KEYWORD Scanner), (OPBRACKET (), (KEYWORD System), (VARIABLE in), (CLOSEBRACKET ))]</option>
+    <option/>
+    <option>[(KEYWORD int), (VARIABLE number)]</option>
+    <option/>
+    <option>[(KEYWORD char), (VARIABLE choice)]</option>
+    <option/>
+    <option>[(KEYWORD int), (VARIABLE evenSum), (ASSIGNOP =)]</option>
+    <option/>
+    <option>[(KEYWORD int), (VARIABLE oddSum), (ASSIGNOP =)]</option>
+    <option/>
+    <option>[(KEYWORD do)]</option>
+    <option/>
+    <option>[]</option>
+    <option/>
+    <option>[(KEYWORD System), (KEYWORD out), (KEYWORD println), (OPBRACKET (), (STRING "Enter the number "), (CLOSEBRACKET ))]</option>
+    <option/>
+    <option>[(VARIABLE number), (ASSIGNOP =), (KEYWORD console), (KEYWORD next), (VARIABLE Int), (OPBRACKET (), (CLOSEBRACKET ))]</option>
+    <option/>
+    <option>[(COMMENT // determines an interger if it is even by dividing it by)]</option>
+    <option/>
+    <option>[(COMMENT // two and find if it has no remainder thus even)]</option>
+    <option/>
+    <option>[(KEYWORD if), (OPBRACKET (), (VARIABLE number), (MODULUSOP %), (NUMBER 2), (EQUALOP ==), (CLOSEBRACKET ))]</option>
+    <option/>
+    <option>[]</option>
+    <option/>
+    <option>[(VARIABLE evenSum), (ADDITIONOP +=), (VARIABLE number)]</option>
+    <option/>
+    <option>[]</option>
+    <option/>
+    <option>[(COMMENT // check if the integer is not even then its odd(has a remainder))]</option>
+    <option/>
+    <option>[(KEYWORD else)]</option>
+    <option/>
+    <option>[]</option>
+    <option/>
+    <option>[(VARIABLE oddSum), (ADDITIONOP +=), (VARIABLE number)]</option>
+    <option/>
+    <option>[]</option>
+    <option/>
+    <option>[(KEYWORD System), (KEYWORD out), (VARIABLE print), (OPBRACKET (), (STRING "Do you want to continue y/n? "), (CLOSEBRACKET ))]</option>
+    <option/>
+    <option>[(VARIABLE choice), (ASSIGNOP =), (KEYWORD console), (KEYWORD next), (OPBRACKET (), (CLOSEBRACKET )), (KEYWORD char), (VARIABLE At), (OPBRACKET (), (CLOSEBRACKET ))]</option>
+    <option/>
+    <option>[(COMMENT //prompts the user to choose where to enter another integer)]</option>
+    <option/>
+    <option>[(KEYWORD while), (OPBRACKET (), (VARIABLE choice), (EQUALOP ==), (VARIABLE y), (OROP ||), (VARIABLE choice), (EQUALOP ==), (VARIABLE Y), (CLOSEBRACKET ))]</option>
+    <option/>
+    <option>[(KEYWORD System), (KEYWORD out), (KEYWORD println), (OPBRACKET (), (STRING "Sum of even numbers: "), (VARIABLE evenSum), (CLOSEBRACKET ))]</option>
+    <option/>
+    <option>[(KEYWORD System), (KEYWORD out), (KEYWORD println), (OPBRACKET (), (STRING "Sum of odd numbers: "), (VARIABLE oddSum), (CLOSEBRACKET ))]</option>
+    <option/>
+    <option>[]</option>
+    <option/>
+    <option>[]</option>
+    <option/>
+</inserts>
